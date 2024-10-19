@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="heading">Student Participation Form</h1>
+        <div class="form">
+
+            <form id="studentForm">
+                <table class="table" border="1">
+
+                    <tr>
+                        <th class="id">Name</th>
+                        <td><input class="input" type="text" id="name" name="name" required></td>
+                    </tr>
+
+                    <tr>
+                        <th class="id">Age</th>
+                        <td><input class="input" type="number" id="age" name="age" required></td>
+                    </tr>
+
+                    <tr>
+                        <th class="id">Gender</th>
+                        
+                            <td class="input">
+                            <label><input class="input" type="radio" id="male" name="gender" value="Male" required>Male
+                                <span></span>
+                            </label>
+                            <label> <input class="input" type="radio" id="female" name="gender" value="Female"
+                                    required>Female
+                                <span></span>
+                            </label>
+                        </td>
+                    
+                    </tr>
+
+                    <tr>
+                        <th class="id">Course</th>
+                        <td>
+                            <select class="input" id="course" name="course" required>
+                                <option>Full Stack Development</option>
+                                <option>Java</option>
+                                <option>Python</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="id">E-mail</th>
+                        <td><input class="input" type="email" id="email" name="email" required></td>
+                    </tr>
+
+                </table>
+
+                <div>
+                    <button class="button" type="button" onclick="submitForm()">Save</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+        <h2 class="heading2">Registered Students</h2>
+
+        <table id="studentTable" border="1">
+            <tr>
+                <th class="id">NAME</th>
+                <th class="id">AGE</th>
+                <th class="id">GENDER</th>
+                <th class="id">COURSE</th>
+                <th class="id">E-MAIL</th>
+                <th class="id">ACTION</th>
+            </tr>
+
+        </table>
+
+    </div>
+
+   
+</body>
+
+</html>
